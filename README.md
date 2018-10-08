@@ -11,11 +11,11 @@ Disclaimer: This is the reproduced code, not an original code of the paper.
 
 see the multi_run.sh
 
-first you need to use [Dense_Flow](https://github.com/yjxiong/dense_flow) to extract rgb and optical flow
+firstly you need to use [Dense_Flow](https://github.com/yjxiong/dense_flow) to extract rgb and optical flow
 
-second you need to extract I3D feature using [thumos14-i3d](https://github.com/demianzhang/thumos14-i3d)
+secondly you need to extract I3D feature using [thumos14-i3d](https://github.com/demianzhang/thumos14-i3d)
 
-last you can train, test and combine the rgb and flow result
+finally you can train, test and combine the rgb and flow result
 
 ### result
 
