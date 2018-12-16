@@ -23,5 +23,21 @@ Model          |  0.1  |  0.2  |  0.3  |  0.4  |  0.5
 -------------- | :---: | :---: | :---: | :---: | ----
 RGB-I3D        | 0.351 | 0.279 | 0.213 | 0.150 | 0.102
 Flow-I3D       | 0.408 | 0.340 | 0.269 | 0.205 | 0.144
-Two-Stream I3D | - | - | - | - | -
+Two-Stream I3D | - | - | - | - |  -
 
+### please pay attention the order according to the paper
+1. sample 10fps 
+
+  use opencv cv2.VideoCapture to read the video and keep one frame every three frames[original video in 30fps]
+
+2. keep ratio 340x180 and resize the small edge to 256 
+
+  after resize frames, then use cv2.VideoWriter to save sampled frames into video
+
+3. extract flow
+
+  use dense_flow to extract rgb and flows, please pay attention to the shell 340x256, you should change the parameter to the video's shape in order to keep the retio
+
+4. center crop 224x224, each 16 frames are sent to i3d
+
+The result may a little higher than the result, because I did not obey this order before.
