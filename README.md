@@ -25,7 +25,7 @@ RGB-I3D        | 0.351 | 0.279 | 0.213 | 0.150 | 0.102
 Flow-I3D       | 0.408 | 0.340 | 0.269 | 0.205 | 0.144
 Two-Stream I3D | - | - | - | - |  -
 
-### please pay attention the order according to the paper
+### please pay attention to the order according to the paper
 1. sample 10fps 
 
   use opencv cv2.VideoCapture to read the video and keep one frame every three frames[original video in 30fps]
