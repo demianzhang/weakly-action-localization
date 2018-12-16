@@ -36,8 +36,8 @@ Two-Stream I3D | - | - | - | - |  -
 
 3. extract flow
 
-  use dense_flow to extract rgb and flows, please pay attention to the shell 340x256, you should change the parameter to the video's shape in order to keep the retio
+  use dense_flow to extract rgb and flows, please pay attention to the shell default parameter 340x256, you should change it to the video's shape in order to keep the ratio
 
 4. center crop 224x224, each 16 frames are sent to i3d
 
-The result may a little higher than the result, because I did not obey this order before.
+The result may be a little higher than the result, because I did not obey this order before.
